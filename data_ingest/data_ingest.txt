@@ -29,6 +29,6 @@ hdfs dfs -mv atp_matches input_final
 hdfs dfs -mv project_data_match_stats input_final
 hdfs dfs -mv match_scores input_final
 
-Important: Once the cleaning and merging dataset code is run (ShriyaFinalCode.scala file), the merged dataset will be in the tennis_merged_final/ directory.
+Important: Once the cleaning and merging dataset code is run (ShriyaFinalCode.scala file), the merged dataset will be in the tennis_merged_final_clean/ directory.
 
 Well done - you're done with data ingestion! Time to move on to data profiling and cleaning!
