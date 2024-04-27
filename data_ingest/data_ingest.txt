@@ -23,6 +23,12 @@ Your atp_matches directory should have the same contents as the data_ingest/tenn
 - In your terminal run, hdfs dfs -put match_scores* match_scores
 - hdfs dfs -ls match_scores should output 4 items
 
+Add the 3 separate folders into one input folder
+hdfs dfs -mkdir input_final
+hdfs dfs -mv atp_matches input_final
+hdfs dfs -mv project_data_match_stats input_final
+hdfs dfs -mv match_scores input_final
+
 Important: Once the cleaning and merging dataset code is run (ShriyaFinalCode.scala file), the merged dataset will be in the tennis_merged_final/ directory.
 
 Well done - you're done with data ingestion! Time to move on to data profiling and cleaning!
