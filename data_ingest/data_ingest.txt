@@ -7,6 +7,8 @@ Getting Datasets:
 - In your terminal run, hdfs dfs -put atp_matches* atp_matches
 - hdfs dfs -ls atp_matches should output 41 items
 
+Your atp_matches directory should have the same contents as the data_ingest/tennis_atp-master folder.
+
 2.  Go to https://github.com/serve-and-volley/atp-world-tour-tennis-data/tree/master/csv/3_match_stats 
 - Download the all files in the format match_stats_{year}.csv from year 1991-2022.
 - Upload the files to dataproc 
