@@ -21,6 +21,6 @@ Getting Datasets:
 - In your terminal run, hdfs dfs -put match_scores* match_scores
 - hdfs dfs -ls match_scores should output 4 items
 
-Important: Once the merging dataset code is run (ShriyaFinalCode.scala file), the merged dataset will be in the tennis_merged_final/ directory.
+Important: Once the cleaning and merging dataset code is run (ShriyaFinalCode.scala file), the merged dataset will be in the tennis_merged_final/ directory.
 
 Well done - you're done with data ingestion! Time to move on to data profiling and cleaning!
