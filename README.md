@@ -29,7 +29,6 @@ spark-shell --deploy-mode client
     * `etl_code/sk8812/match_stats_cleaning.scala`contains the code for this data cleaning.
     * More commands in `data_ingest/data_ingest.txt`
 2. **Data cleaning and profiling for `match_scores`**: 
-<<<<<<< HEAD
     * Use  `data_ingest/match_scores/` as your input data
     * `etl_code/match_scores_cleaning.scala`contains the code for this data cleaning.
     * More commands in `data_ingest/data_ingest.txt`
