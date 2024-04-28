@@ -90,6 +90,8 @@ This will give a cleaner analysis output.
 * ana_code/
     * finalAnalyticManjiriShriya.scala
 * screenshots/
+    * Main Analytics Ouput 
+    * Analytics Code Step by Step 
     * final_dataset_cleaning_screenshots
     * match_scores_cleaning_screenshots
     * match_stats_cleaning_screenshots
@@ -100,6 +102,8 @@ This will give a cleaner analysis output.
 
 ## Notes
 Files Shriya Clean.scala, Shriya CountRecs.scala, Shriya FirstCode.scala, Manjiri Clean.scala, Manjiri CountRecs.scala, Manjiri FirstCode.scala are used to analyze individual datasets and are provided to show how code was repurposed to form a cleaned merged dataset. The directories used to load the input data in these are from our hw6 directories, to which access is already provided.
+
+Main Analytics Ouput and Analytics Code Step by Step essential have the same output, its main analytics is when the whole scala file is run at once, and step by step is screenshots of when commands are run on spark shell one by one.
 
 ## Contributors
 * Shriya Kalakata
