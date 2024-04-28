@@ -24,6 +24,14 @@ spark-shell --deploy-mode client
 ```
 
 ### Data Cleaning, Profiling, and Merging
+1. **Data cleaning and profiling for `match_stats`**: 
+2. **Data cleaning and profiling for `match_scores`**: 
+2. **Merging `match_stats` and `match_scores`**: 
+2. **Cleaning the merged dataset of `match_stats` and `match_scores`**: 
+1. **Data cleaning and profiling for `tennis_atp_master`**: 
+2. **Merging `tennis_atp_master`  with the merged and cleaned dataset of `match_stats` and `match_scores` to get the final dataset**: 
+6. **Cleaning and profiling for the final dataset**:
+
 
 ### Data Analysis
 
