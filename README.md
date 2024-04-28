@@ -24,7 +24,7 @@ spark-shell --deploy-mode client
 ```
 
 ### Important Note:
-The paths in our code files (for getting input data and outputting and saving a modified dataset into HDFS) might be different from what you need to put. For example, we have ``` val file = "tennis_merged_final/part-00000-baea738d-95aa-4f4b-b952-02b19f4e3fbe-c000.csv"``` and ```dfWithoutDuplicates.coalesce(1).write.option("header",true).csv("tennis_merged_final_clean/")```. However, the datasets shared with the Professors are all in a singular directory. Hence **ensure you use the correct file paths**.
+The paths in our code files (for getting input data and outputting and saving a modified dataset into HDFS) might be different from what you need to put. For example, we have ``` val file = "tennis_merged_final/part-00000-baea738d-95aa-4f4b-b952-02b19f4e3fbe-c000.csv"``` and ```dfWithoutDuplicates.coalesce(1).write.option("header",true).csv("tennis_merged_final_clean/")```. However, the datasets shared with the Professors are all in a singular directory. Hence **ensure you use the correct file paths in the code files**.
 
 ### Data Cleaning, Profiling, and Merging
 1. **Data cleaning and profiling for `match_stats`**: 
