@@ -23,6 +23,9 @@ We're using three different datasets in this analysis:
 spark-shell --deploy-mode client
 ```
 
+### Important Note:
+The paths in our code files might be different from what you need to put. For example, we have ``` val file = "tennis_merged_final/part-00000-baea738d-95aa-4f4b-b952-02b19f4e3fbe-c000.csv"``` and 
+
 ### Data Cleaning, Profiling, and Merging
 1. **Data cleaning and profiling for `match_stats`**: 
     * Use  `data_ingest/match_stats/` as your input data
