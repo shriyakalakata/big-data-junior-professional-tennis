@@ -68,7 +68,7 @@ This will give a cleaner analysis output.
     * match_stats/
     * match_scores/
 * data_other/
-    * TO-DO
+    * final_dataset.csv
 * etl_code/
     * final_dataset_cleaning.scala
     * match_scores_cleaning.scala
