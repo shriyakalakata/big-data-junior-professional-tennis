@@ -25,12 +25,23 @@ spark-shell --deploy-mode client
 
 ### Data Cleaning, Profiling, and Merging
 1. **Data cleaning and profiling for `match_stats`**: 
+    * Use  `data_ingest/match_stats/` as your input data
+    * `etl_code/sk8812/match_stats_cleaning.scala`contains the code for this data cleaning.
+    * More commands in `data_ingest/data_ingest.txt`
 2. **Data cleaning and profiling for `match_scores`**: 
-2. **Merging `match_stats` and `match_scores`**: 
-2. **Cleaning the merged dataset of `match_stats` and `match_scores`**: 
-1. **Data cleaning and profiling for `tennis_atp_master`**: 
-2. **Merging `tennis_atp_master`  with the merged and cleaned dataset of `match_stats` and `match_scores` to get the final dataset**: 
+    * Use  `data_ingest/match_scores/` as your input data
+    * `etl_code/match_scores_cleaning.scala`contains the code for this data cleaning.
+    * More commands in `data_ingest/data_ingest.txt`
+3. **Merging `match_stats` and `match_scores`**: 
+    * `merge_first.scala` contains the data for this merging and cleaning
+4. **Data cleaning and profiling for `tennis_atp_master`**: 
+    * Use  `data_ingest/tennis_atp_master/` as your input data
+    * `etl_code/mb8070/tennis_atp_master_cleaning.scala`contains the code for this data cleaning.
+    * More commands in `data_ingest/data_ingest.txt`
+5. **Merging `tennis_atp_master`  with the merged and cleaned dataset of `match_stats` and `match_scores` to get the final dataset**: 
+    * `merging_all.scala` contains the code for the merging
 6. **Cleaning and profiling for the final dataset**:
+    * `final_dataset_cleaning.scala` contains the code for cleaning the final dataset.
 
 
 ### Data Analysis
