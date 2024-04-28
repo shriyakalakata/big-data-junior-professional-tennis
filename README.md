@@ -12,6 +12,10 @@ We're using three different datasets in this analysis:
     * Source: https://github.com/serve-and-volley/atp-world-tour-tennis-data/tree/master/csv/2_match_scores
     * Where to find in this repo: `data_ingest/match_scores/`
 
+## Input Data
+We have provided access to `/user/mb8070_nyu_edu/input_final` on HDFS directory which contains 3 subdirectories `/input_final/match_stats`, `/input_final/match_scores`, and `input_final/atp_matches/`. 
+This is the input data we have used and data_ingest.txt file describes how you can set up this directory on your own HDFS from scratch.
+
 ## Building and Running Code
 
 ### Running the Code on Dataproc/HDFS
