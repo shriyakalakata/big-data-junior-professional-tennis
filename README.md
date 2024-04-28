@@ -23,6 +23,43 @@ We're using three different datasets in this analysis:
 spark-shell --deploy-mode client
 ```
 
+## Directory Structure
+* data_ingest/
+    * data_ingest.txt
+    * tennis_atp_master/
+    * match_stats/
+    * match_scores/
+* data_other/
+    * TO-DO
+* etl_code/
+    * final_dataset_cleaning.scala
+    * match_scores_cleaning.scala
+    * merge_first.scala
+    * merging_all.scala
+    * sk8812/
+        * Shriya Clean.scala
+        * match_stats_cleaning.scala
+    * mb8070/
+        * Manjiri Clean.scala
+        * tennis_atp_master_cleaning.scala
+* profiling_code/
+    * sk8812/
+        * Shriya CountRecs.scala
+        * Shriya FirstCode.scala
+    * mb8070/
+        * Manjiri CountRecs.scala
+        * Manjiri FirstCode.scala
+* ana_code/
+    * TO-DO
+* screenshots/
+    * final_dataset_cleaning_screenshots
+    * match_scores_cleaning_screenshots
+    * match_stats_cleaning_screenshots
+    * merge_all_datasets_screenshots
+    * merge_first_screenshots
+    * tennis_atp_master_cleaning_screenshots
+* README.md
+
 ## Contributors
 * Shriya Kalakata
 * Manjiri Bhandarwar
