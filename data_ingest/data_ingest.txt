@@ -1,13 +1,13 @@
 Getting Datasets: 
 
 1. Go to https://github.com/JeffSackmann/tennis_atp/tree/master 
-- Download the all files in the format atp_matches_{year}.csv from year 1968-2023.
+- Download the all files in the format atp_matches_{year}.csv from year 1991-2022.
 - Upload the files to dataproc 
 - In the shell run, hdfs dfs -mkdir atp_matches
 - In your terminal run, hdfs dfs -put atp_matches* atp_matches
-- hdfs dfs -ls atp_matches should output 41 items
+- hdfs dfs -ls atp_matches should output 32 items
 
-Your atp_matches directory should have the same contents as the data_ingest/tennis_atp-master folder.
+Your atp_matches directory should have the same contents as the data_ingest/tennis_atp_master folder.
 
 2.  Go to https://github.com/serve-and-volley/atp-world-tour-tennis-data/tree/master/csv/3_match_stats 
 - Download the all files in the format match_stats_{year}.csv from year 1991-2022.
@@ -16,6 +16,8 @@ Your atp_matches directory should have the same contents as the data_ingest/tenn
 - In your terminal run, hdfs dfs -put match_stats_* project_data_match_stats
 - hdfs dfs -ls project_data_match_stats should output 32 items
 
+Your project_data_match_stats directory should have the same contents as the data_ingest/match_stats folder.
+
 3. Go to https://github.com/serve-and-volley/atp-world-tour-tennis-data/tree/master/csv/2_match_scores
 - Download match_scores_1990-1999.csv, match_scores_2000-2009.csv, match_scores_2010-2019.csv, match_scores_2020-2022.csv
 - Upload the files to dataproc 
@@ -23,12 +25,14 @@ Your atp_matches directory should have the same contents as the data_ingest/tenn
 - In your terminal run, hdfs dfs -put match_scores* match_scores
 - hdfs dfs -ls match_scores should output 4 items
 
+Your match_scores directory should have the same contents as the data_ingest/match_scores folder.
+
 Add the 3 separate folders into one input folder
 hdfs dfs -mkdir input_final
 hdfs dfs -mv atp_matches input_final
 hdfs dfs -mv project_data_match_stats input_final
 hdfs dfs -mv match_scores input_final
 
-Important: Once the cleaning and merging dataset code is run (ShriyaFinalCode.scala file), the merged dataset will be in the tennis_merged_final_clean/ directory.
+Important: Once the cleaning and merging dataset code is run, the final merged and cleaned dataset will be in the tennis_merged_final_clean/ directory. Furthermore, data is saved to hdfs after cleaning each dataset and after each merge as well.
 
 Well done - you're done with data ingestion! Time to move on to data profiling and cleaning!
