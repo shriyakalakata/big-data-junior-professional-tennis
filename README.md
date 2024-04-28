@@ -108,6 +108,8 @@ This will give a cleaner analysis output.
     * merge_all_datasets_screenshots
     * merge_first_screenshots
     * tennis_atp_master_cleaning_screenshots
+    * mb8070_hw6_hw7_output (contains Clean.scala, FirstCode.scala and CountRecs.scala screenshots)
+    * sk8812_hw6_hw7_output (contains Clean.scala, FirstCode.scala and CountRecs.scala screenshots)
 * README.md
 
 ## Notes
