@@ -28,10 +28,10 @@ The paths in our code files (for getting input data and outputting and saving a 
 
 ### Data Cleaning, Profiling, and Merging
 1. **Data cleaning and profiling for `match_stats`**: 
-    * Use  `data_ingest/match_stats/` as your input data
+    * Use  `data_ingest/match_stats/` as your input data (physical folder in our directory)
          * Note: `data_ingest/match_stats/` is not the hdfs directory name. That would be `input_final/match_stats/`.
     * `etl_code/sk8812/match_stats_cleaning.scala`contains the code for this data cleaning.
-    * More commands in `data_ingest/data_ingest.txt`
+    * For more support refer to commands in `data_ingest/data_ingest.txt`
 2. **Data cleaning and profiling for `match_scores`**: 
     * Use  `data_ingest/match_scores/` as your input data
          * Note: `data_ingest/match_scores/` is not the hdfs directory name. That would be `input_final/match_scores/`.
@@ -41,18 +41,18 @@ The paths in our code files (for getting input data and outputting and saving a 
     * `merge_first.scala` contains the data for this merging and cleaning
 4. **Data cleaning and profiling for `tennis_atp_master`**: 
     * Use  `data_ingest/tennis_atp_master/` as your input data
-         * Note: `data_ingest/tennis_atp_master/` is not the hdfs directory name. That would be `input_final/tennis_atp_master/`.
+         * Note: `data_ingest/tennis_atp_master/` is not the hdfs directory name. That would be `input_final/atp_matches/`.
     * `etl_code/mb8070/tennis_atp_master_cleaning.scala`contains the code for this data cleaning.
     * More commands in `data_ingest/data_ingest.txt`
-5. **Merging `tennis_atp_master`  with the merged and cleaned dataset of `match_stats` and `match_scores` to get the final dataset**: 
+5. **Merging `tennis_atp_master` with the merged and cleaned dataset of `match_stats` and `match_scores` to get the final dataset**: 
     * `merging_all.scala` contains the code for the merging
 6. **Cleaning and profiling for the final dataset**:
     * `final_dataset_cleaning.scala` contains the code for cleaning the final dataset.
 
 ### Checklist of directories after this step
-You should have the following directories in your HDFS
-- input_final/
-- tennis_merged_final_clean/ (which now contains the merged and clean dataset we will be using for the analytic)
+Ensure you should the following directories in your HDFS before moving towards the data analysis part.
+- `input_final/`
+- `tennis_merged_final_clean/` (which now contains the merged and clean dataset we will be using for the analytic)
 
 ### Data Analysis
 **Method 1: [PREFERRED]**
@@ -107,7 +107,7 @@ This will give a cleaner analysis output.
 * README.md
 
 ## Notes
-Files Shriya Clean.scala, Shriya CountRecs.scala, Shriya FirstCode.scala, Manjiri Clean.scala, Manjiri CountRecs.scala, Manjiri FirstCode.scala are used to analyze individual datasets and are provided to show how code was repurposed to form a cleaned merged dataset. The directories used to load the input data in these are from our hw6 directories, to which access is already provided.
+Files Shriya Clean.scala, Shriya CountRecs.scala, Shriya FirstCode.scala, Manjiri Clean.scala, Manjiri CountRecs.scala, Manjiri FirstCode.scala are used to analyze individual datasets and are provided to show how code was repurposed to form a cleaned merged dataset. The directories used to load the input data in these are from our hw6 directories, to which access is already provided. 
 
 Main Analytics Ouput and Analytics Code Step by Step essential have the same output, its main analytics is when the whole scala file is run at once, and step by step is screenshots of when commands are run on spark shell one by one.
 
