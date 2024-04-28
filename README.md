@@ -57,6 +57,7 @@ You should have the following directories in your HDFS
 spark-shell --deploy-mode client -i finalAnalyticManjiriShriya.scala
 ```
 This will give a cleaner analysis output.
+
 **Method 2:**
 1. If you are already in the spark shell from the previous parts, run each command from finalAnalyticManjiriShriya.scala one by one in the shell.
 
