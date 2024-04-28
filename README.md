@@ -17,7 +17,7 @@ We're using three different datasets in this analysis:
 ### Running the Code on Dataproc/HDFS
 
 1. **Setup Dataproc Cluster**: Ensure you have access to a Google Cloud Platform (GCP) account and have set up a Dataproc cluster.
-2. **Upload Data to HDFS**: Transfer your input data to the Hadoop Distributed File System (HDFS) on your Dataproc cluster.
+2. **Upload Data to HDFS**: Transfer your input data to the Hadoop Distributed File System (HDFS) on your Dataproc cluster. (Using the data_ingest.txt instructions)
 3. **Open Spark Shell**: Access the Spark shell on your Dataproc cluster by running the following command:
 ```
 spark-shell --deploy-mode client
@@ -26,14 +26,28 @@ spark-shell --deploy-mode client
 ### Data Cleaning, Profiling, and Merging
 1. **Data cleaning and profiling for `match_stats`**: 
 2. **Data cleaning and profiling for `match_scores`**: 
-2. **Merging `match_stats` and `match_scores`**: 
-2. **Cleaning the merged dataset of `match_stats` and `match_scores`**: 
-1. **Data cleaning and profiling for `tennis_atp_master`**: 
-2. **Merging `tennis_atp_master`  with the merged and cleaned dataset of `match_stats` and `match_scores` to get the final dataset**: 
-6. **Cleaning and profiling for the final dataset**:
+3. **Merging `match_stats` and `match_scores`**: 
+4. **Cleaning the merged dataset of `match_stats` and `match_scores`**: 
+5. **Data cleaning and profiling for `atp_matches`**: 
+6. **Merging `tennis_atp_master`  with the merged and cleaned dataset of `match_stats` and `match_scores` to get the final dataset**: 
+7. **Cleaning and profiling for the final dataset**:
 
+   ### Checklist of directories after this step
+   You should have the following directories in your HDFS
+   - input_final/
+   - tennis_merged_final_clean/ (which now contains the merged and clean dataset we will be using for the analytic)
 
 ### Data Analysis
+**Method 1: [PREFERRED]**
+1. If you are doing this step, refresh your dataproc website.
+2. Upload finalAnalyticManjiriShriya.scala (which is in the ana_code directory) file to dataproc
+3. Run the command below on HDFS to
+```
+spark-shell --deploy-mode client -i finalAnalyticManjiriShriya.scala
+```
+This will give a cleaner analysis output.
+**Method 2:**
+1. If you are already in the spark shell from the previous parts, run each command from finalAnalyticManjiriShriya.scala one by one in the shell.
 
 ## Directory Structure
 * data_ingest/
@@ -62,7 +76,7 @@ spark-shell --deploy-mode client
         * Manjiri CountRecs.scala
         * Manjiri FirstCode.scala
 * ana_code/
-    * TO-DO
+    * finalAnalyticManjiriShriya.scala
 * screenshots/
     * final_dataset_cleaning_screenshots
     * match_scores_cleaning_screenshots
@@ -71,6 +85,9 @@ spark-shell --deploy-mode client
     * merge_first_screenshots
     * tennis_atp_master_cleaning_screenshots
 * README.md
+
+## Notes
+Files Shriya Clean.scala, Shriya CountRecs.scala, Shriya FirstCode.scala, Manjiri Clean.scala, Manjiri CountRecs.scala, Manjiri FirstCode.scala are used to analyze individual datasets and are provided to show how code was repurposed to form a cleaned merged dataset. The directories used to load the input data in these are from our hw6 directories, to which access is already provided.
 
 ## Contributors
 * Shriya Kalakata
