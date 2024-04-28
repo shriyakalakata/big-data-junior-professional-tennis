@@ -41,6 +41,7 @@ The paths in our code files (for getting input data and outputting and saving a 
     * `merge_first.scala` contains the data for this merging and cleaning
 4. **Data cleaning and profiling for `tennis_atp_master`**: 
     * Use  `data_ingest/tennis_atp_master/` as your input data
+         * Note: `data_ingest/tennis_atp_master/` is not the hdfs directory name. That would be `input_final/tennis_atp_master/`.
     * `etl_code/mb8070/tennis_atp_master_cleaning.scala`contains the code for this data cleaning.
     * More commands in `data_ingest/data_ingest.txt`
 5. **Merging `tennis_atp_master`  with the merged and cleaned dataset of `match_stats` and `match_scores` to get the final dataset**: 
