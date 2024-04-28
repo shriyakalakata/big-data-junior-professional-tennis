@@ -29,11 +29,12 @@ The paths in our code files (for getting input data and outputting and saving a 
 ### Data Cleaning, Profiling, and Merging
 1. **Data cleaning and profiling for `match_stats`**: 
     * Use  `data_ingest/match_stats/` as your input data
-         Note: `data_ingest/match_stats/` is not the hdfs directory name. That would be `input_final/match_stats/`.
+         * Note: `data_ingest/match_stats/` is not the hdfs directory name. That would be `input_final/match_stats/`.
     * `etl_code/sk8812/match_stats_cleaning.scala`contains the code for this data cleaning.
     * More commands in `data_ingest/data_ingest.txt`
 2. **Data cleaning and profiling for `match_scores`**: 
     * Use  `data_ingest/match_scores/` as your input data
+         * Note: `data_ingest/match_scores/` is not the hdfs directory name. That would be `input_final/match_scores/`.
     * `etl_code/match_scores_cleaning.scala`contains the code for this data cleaning.
     * More commands in `data_ingest/data_ingest.txt`
 3. **Merging `match_stats` and `match_scores`**: 
